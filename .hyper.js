@@ -6,7 +6,7 @@ module.exports = {
   config: {
     // Choose either "stable" for receiving highly polished,
     // or "canary" for less polished but more frequent updates
-    updateChannel: 'canary',
+    updateChannel: 'stable',
 
     // default font size in pixels for all tabs
     fontSize: 13,
@@ -142,7 +142,7 @@ module.exports = {
   //  `project#1.0.1`
   //  'hyperyellow'
   //  'hyperline',
-  plugins: ['hypercwd', 'hyper-dracula'],
+  plugins: ['hypercwd', 'hyper-dracula', 'hyperyellow'],
 
 
   // in development, you can create a directory under

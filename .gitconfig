@@ -4,6 +4,7 @@
 [core]
 	whitespace = cr-at-eol
 	pager = diff-so-fancy | less
+	quotepath = false
 [push]
 	default = matching
 [alias]
@@ -36,3 +37,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[gui]
+	encoding = utf-8

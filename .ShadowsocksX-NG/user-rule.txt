@@ -22,3 +22,34 @@ coursera.org
 reddit.com
 egghead.io
 pytorch.org
+! Put user rules line by line in this file.
+! See https://adblockplus.org/en/filter-cheatsheet
+http://93.91p28.space
+docker.com
+t.me
+github.io
+javascript30.com
+coinmarketcap.com
+leanpub.com
+teleme.io
+developer.mozilla.org
+jsfiddle.net
+teamviewer.com
+joelonsoftware.com
+codepen.com
+dribbble.com
+github.com
+gitbook.io
+pcloud.com
+coursera.org
+reddit.com
+egghead.io
+pytorch.org
+jsfiddle.net
+vuejs.org
+manhuadb.com
+slack.com
+trello.com
+notion.so
+jetbrains.com
+spotify.com
