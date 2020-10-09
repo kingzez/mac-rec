@@ -66,6 +66,7 @@ plugins=(
   vscode
   autojump
   zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -131,7 +132,9 @@ export PATH="/usr/local/sbin:$PATH"
 
 export PATH="/Users/edz/.deno/bin:$PATH"
 
+# go
 export GOPATH=$HOME/go
+export GOPROXY=https://goproxy.io
 
 # flutter
 export PATH=~/flutter/bin:$PATH
@@ -139,9 +142,39 @@ alias fl=~/flutter/bin/flutter
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
+# code
+export LC_ALL=en_US.UTF-8
+
+# electron
+export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
 
 alias emcc=~/self/emsdk/fastcomp/emscripten/emcc
-
 alias emrun=~/self/emsdk/fastcomp/emscripten/emrun
 
+# quick open
 alias github='open https://github.com'
+
+# quick ssh
+alias sshui='ssh root@39.97.226.144'
+alias sshapi="ssh root@39.107.115.159"
+alias sshtc="ssh root@49.235.171.75"
+
+
+# https://github.com/sindresorhus/pure
+autoload -U promptinit; promptinit
+fpath+=("$HOME/.zsh/pure")
+PURE_PROMPT_SYMBOL='👻  ❯'
+prompt pure
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias lzd='lazydocker'
+
+# brew mirror
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+
+# android
+export ANDROID_HOME=/Applications/ADT/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# cargo
+export PATH="$HOME/.cargo/bin:$PATH"

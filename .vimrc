@@ -17,7 +17,7 @@ filetype plugin on  " 根据侦测到的不同类型加载对应的插件
 
 
 " >>>=========vim 自身（非插件）快捷键============
-" 
+"
 
 nmap LB 0     " 定义快捷键到行首 / “)” 页尾
 nmap LE $     " 定义快捷键到行尾
@@ -75,7 +75,7 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 
-" >>> 配色方案" 
+" >>> 配色方案"
 Plug 'dracula/vim'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'tomasr/molokai'
@@ -97,7 +97,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " 支持大多数语言代码高亮
 Plug 'sheerun/vim-polyglot'
-Plug 'kchmck/vim-coffee-script'  " CoffeeScript support for vim
+" Plug 'kchmck/vim-coffee-script'  " CoffeeScript support for vim
 
 " 文件搜索
 Plug 'wincent/command-t'
@@ -206,7 +206,7 @@ filetype plugin indent on  " 根据侦测到的不同类型加载对应的插件
 
 " >>>>>>>>>>
 " 配色方案
-" 
+"
 set background=dark
 " dracula
 " Plug 'dracula/vim'
@@ -217,12 +217,12 @@ colorscheme dracula
 " colorscheme solarized
 
 " 多彩 molokai
-" Plug 'tomasr/molokai' 
+" Plug 'tomasr/molokai'
 " colorscheme molokai
 
 " colorscheme material-theme
 " 复古 phd
-" Plug 'tomasr/molokai' 
+" Plug 'tomasr/molokai'
 " colorscheme phd
 " <<<<<<<<<<
 
@@ -258,7 +258,7 @@ autocmd VimEnter * call ToggleFullscreen()
 
 " >>>>>>>>>>
 " 辅助信息
- 
+
 set laststatus=2   " 总是显示状态栏
 set ruler          " 显示光标当前位置
 set number         " 开启行号显示
@@ -270,11 +270,11 @@ set number         " 开启行号显示
 set cursorline    " 高亮显示当前 - 行
 set cursorcolumn  " 高亮显示当前 - 列
 set hlsearch      " 高亮显示搜索结果
-" set nocompatible  " 不要使用vi的键盘模式，而是vim自己的 
+" set nocompatible  " 不要使用vi的键盘模式，而是vim自己的
 " set encoding=utf-8
 
-" 在处理未保存或只读文件的时候，弹出确认 
-set confirm 
+" 在处理未保存或只读文件的时候，弹出确认
+set confirm
 
 " <<<<<<<<<<
 
@@ -285,8 +285,8 @@ set confirm
 
 " 设置 gvim 显示字体
 " set guifont=YaHei\ Consolas\ Hybrid\ 10.5
-" set guifont=Liberation\ Mono\ for\ Powerline\ 10 
-set guifont=Source\ Code\ Pro\ for\ Powerline:h16 
+" set guifont=Liberation\ Mono\ for\ Powerline\ 10
+set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 
 
 set nowrap " 禁止折行
@@ -376,7 +376,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 " >>>>>>>>>>
 " 代码折叠
 
-set foldmethod=syntax   " 基于缩进或语法进行代码折叠 
+set foldmethod=syntax   " 基于缩进或语法进行代码折叠
                         " 手动建立折叠（manual）、
                         " 基于缩进进行折叠（indent）、
                         " 基于语法进行折叠（syntax）、
@@ -460,7 +460,7 @@ let g:tagbar_type_css = {
 
 " >>>>>>>>>>
 " 代码导航
- 
+
 " 基于标签的代码导航
 
 " 自动生成标签并引入
@@ -496,7 +496,7 @@ nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
 " Plug 'dyng/ctrlsf.vim'
 " 使用 ctrlsf.vim 插件在工程内全局查找光标所在关键字，设置快捷键。
 " 快捷键速记法：search in project
-let g:ctrlsf_ackprg = 'rg' 
+let g:ctrlsf_ackprg = 'rg'
 nnoremap <Leader>sp :CtrlSF<CR>
 " 选中搜索 - 文本中选中关键字
 vmap     <Leader>sp <Plug>CtrlSFVwordPath
@@ -627,7 +627,7 @@ let g:ycm_cache_omnifunc=0
 let g:ycm_seed_identifiers_with_syntax=1
 
 " <<<<<<<<<<
- 
+
 
 " >>>>>>>>>>
 " 由接口快速生成实现框架
@@ -716,7 +716,7 @@ let NERDTreeAutoDeleteBuffer=1
 
 " >>>>>>>>>>
 " 多文档编辑
- 
+
 " 显示多个 buffer 对应的 window
 " Plug 'fholgado/minibufexpl.vim'
 " 显示/隐藏 MiniBufExplorer 窗口
@@ -752,7 +752,7 @@ map <leader>ss :mksession! my.vim<cr>
 map <leader>rs :source my.vim<cr>
 
 " <<<<<<<<<<
- 
+
 
 " 设置快捷键实现一键编译及运行
 " nmap <Leader>m :wa<CR> :cd build/<CR> :!rm -rf main<CR> :!cmake CMakeLists.txt<CR>:make<CR><CR> :cw<CR> :cd ..<CR>
@@ -761,7 +761,7 @@ map <leader>rs :source my.vim<cr>
 
 " >>>>>>>>>>
 " 快速选中结对符内的文本
- 
+
 " 快捷键
 map <SPACE> <Plug>(wildfire-fuel)
 vmap <S-SPACE> <Plug>(wildfire-water)
@@ -779,4 +779,3 @@ let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "i>", "ip"]
 nnoremap <Leader>ud :GundoToggle<CR>
 
 " <<<<<<<<<<
-

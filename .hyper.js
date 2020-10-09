@@ -9,12 +9,12 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Monaco, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Droid Sans Mono', // Source Code Pro
 
-    fontWeight: 'lighter',
+    // fontWeight: 'light',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -132,6 +132,8 @@ module.exports = {
         // "spotify"
       ]
     },
+
+    pokemon: 'Psyduck'
   },
 
   // a list of plugins to fetch and install from npm
@@ -142,7 +144,8 @@ module.exports = {
   //  `project#1.0.1`
   //  'hyperyellow'
   //  'hyperline',
-  plugins: ['hypercwd', 'hyper-dracula', 'hyperyellow'],
+  //  ,'hyper-pokemon'
+  plugins: ['hypercwd', 'hyper-dracula'],
 
 
   // in development, you can create a directory under

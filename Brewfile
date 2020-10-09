@@ -41,7 +41,7 @@ cask "appcleaner"
 cask "evernote"
 cask "qq"
 cask "the-unarchiver"
-cask "mplayerx"
+cask "iina"
 cask "ticktick"
 cask "robo-3t"
 cask "postman"
@@ -54,6 +54,6 @@ cask "free-download-manager"
 cask "go2shell"
 #
 mas "Sip", id: 507257563
-mas "WeChat" id: 836500024
-mas "TickTick" id: 966085870
-mas "Kindle" id: 40539919
+mas "WeChat", id: 836500024
+mas "TickTick", id: 966085870
+mas "Kindle", id: 40539919
